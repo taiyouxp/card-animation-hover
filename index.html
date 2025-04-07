@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cards</title>
+    <style>
+        body {
+            font-family: Noto sans;
+            padding: 30px;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        a {
+            text-decoration: none;
+            color: #777777;
+            transition: color 0.3s ease;
+            font-size: 20px;
+        }
+        .card-link1:hover {
+            color: rgb(10,100,250);
+        }
+        
+        .card-link2:hover {
+            color: rgb(250, 100, 10);
+        }
+        img {
+            width: 600px;
+            height: 300px;
+            object-fit: cover;
+        }
+        img.uninteractable {
+            user-select: none; 
+            pointer-events: none;  
+            -webkit-user-drag: none; 
+            -moz-user-drag: none;    
+            -ms-user-drag: none;    
+        }
+    </style>
+</head>
+<body>
+
+<h2>Two models of cards with hover animation in CSS</h2>
+    <a href="cards/card1/card1.html" class="card-link1">Card 1 (Spyke)</a>
+    <br><br>
+    <a href="cards/card2/card2.html" class="card-link2">Card 2 (Ed)</a>
+        <br>
+    <img src="https://preview.redd.it/wr8kgpez27781.png?width=3840&format=png&auto=webp&s=8be6b67e36bc23ab3d57e7644dd2e47e03cbcae9" class="uninteractable">
+</body>
+</html>
